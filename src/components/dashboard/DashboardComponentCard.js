@@ -29,29 +29,24 @@ export default class DashboardComponentCard extends Component {
                             </Row>
                             <Row><Col><hr className="card-content-separator" /></Col></Row>
                         </Container>
-                        <Card.Text>
 
+                        <div className="checks-passed-container">
 
-                            <div className="checks-passed-container">
+                            <p>Checks <br /><span>12/15</span></p>
 
-                                <p>Checks <br/><span>12/15</span></p>
+                        </div>
 
-                            </div>
-
-                            <ul className="vulnerability-list">
-                                <li>
-                                    Critical: <Badge variant="secondary">5</Badge>
-                                </li>
-                                <li>
-                                    High priority: <Badge variant="secondary">3</Badge>
-                                </li>
-                                <li>
-                                    Medium: <Badge variant="secondary">4</Badge>
-                                </li>
-                            </ul>
-
-                        </Card.Text>
-                        {/* <span class="dot"></span> */}
+                        <ul className="vulnerability-list">
+                            <li>
+                                Critical: <Badge variant="secondary">5</Badge>
+                            </li>
+                            <li>
+                                High priority: <Badge variant="secondary">3</Badge>
+                            </li>
+                            <li>
+                                Medium: <Badge variant="secondary">4</Badge>
+                            </li>
+                        </ul>
                     </Card.Body>
                 </Card>
 

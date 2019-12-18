@@ -3,6 +3,10 @@ import '../../styles/Dashboard.css';
 import { Jumbotron, Badge, Container, Row, Col, Accordion, Card, Button } from 'react-bootstrap';
 import awsLogo from "../../images/aws-logo.png";
 import DashboardComponentCard from './DashboardComponentCard';
+import { Link } from 'react-router-dom';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEye } from '@fortawesome/free-solid-svg-icons'
 
 import ec2Logo from "../../images/ec2-logo.png";
 import s3Logo from "../../images/s3-logo.png";
@@ -78,7 +82,15 @@ function Dashboard() {
                                 <Card.Header className="accordeon-card-header">
                                     <Accordion.Toggle as={Button} variant="link" eventKey="0">
                                         Database
-                                </Accordion.Toggle>
+                                    </Accordion.Toggle>
+                                    <span className="accordeon-header-right">
+                                        <span className="accordeon-header-component-count">
+                                            3/3
+                                            </span>
+                                        <Link to="/incidents">
+                                            <FontAwesomeIcon icon={faEye} size="lg" />
+                                        </Link>
+                                    </span>
                                 </Card.Header>
                                 <Accordion.Collapse eventKey="0">
                                     <Card.Body>
@@ -99,6 +111,12 @@ function Dashboard() {
                                     <Accordion.Toggle as={Button} variant="link" eventKey="1">
                                         Compute
                                 </Accordion.Toggle>
+                                    <span className="accordeon-header-right">
+                                        <span className="accordeon-header-component-count">
+                                            2/2
+                                            </span>
+                                        <FontAwesomeIcon icon={faEye} size="lg" />
+                                    </span>
                                 </Card.Header>
                                 <Accordion.Collapse eventKey="1">
                                     <Card.Body>
@@ -119,6 +137,12 @@ function Dashboard() {
                                     <Accordion.Toggle as={Button} variant="link" eventKey="2">
                                         Logging
                                 </Accordion.Toggle>
+                                    <span className="accordeon-header-right">
+                                        <span className="accordeon-header-component-count">
+                                            1/4
+                                            </span>
+                                        <FontAwesomeIcon icon={faEye} size="lg" />
+                                    </span>
                                 </Card.Header>
                                 <Accordion.Collapse eventKey="2">
                                     <Card.Body>Hello! I'm another body</Card.Body>
@@ -129,6 +153,12 @@ function Dashboard() {
                                     <Accordion.Toggle as={Button} variant="link" eventKey="3">
                                         Network
                                 </Accordion.Toggle>
+                                    <span className="accordeon-header-right">
+                                        <span className="accordeon-header-component-count">
+                                            3/3
+                                            </span>
+                                        <FontAwesomeIcon icon={faEye} size="lg" />
+                                    </span>
                                 </Card.Header>
                                 <Accordion.Collapse eventKey="3">
                                     <Card.Body>Hello! I'm another body</Card.Body>
@@ -139,6 +169,12 @@ function Dashboard() {
                                     <Accordion.Toggle as={Button} variant="link" eventKey="4">
                                         Storage
                                 </Accordion.Toggle>
+                                    <span className="accordeon-header-right">
+                                        <span className="accordeon-header-component-count">
+                                            1/2
+                                            </span>
+                                        <FontAwesomeIcon icon={faEye} size="lg" />
+                                    </span>
                                 </Card.Header>
                                 <Accordion.Collapse eventKey="4">
                                     <Card.Body>
@@ -151,6 +187,12 @@ function Dashboard() {
                                     <Accordion.Toggle as={Button} variant="link" eventKey="5">
                                         IAM
                                 </Accordion.Toggle>
+                                    <span className="accordeon-header-right">
+                                        <span className="accordeon-header-component-count">
+                                            3/4
+                                            </span>
+                                        <FontAwesomeIcon icon={faEye} size="lg" />
+                                    </span>
                                 </Card.Header>
                                 <Accordion.Collapse eventKey="5">
                                     <Card.Body>

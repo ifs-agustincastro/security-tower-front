@@ -53,12 +53,22 @@ img.dashboard-cloud-logo{
 /* Accordeon styles */
 
 .accordeon-card-header{
-    font-family: "oxygen";
+    font-family: "Oxygen";
 }
 
 div.accordeon-card-header button{
     text-decoration: none !important;
     color: #3c6478;
+}
+
+span.accordeon-header-right{
+    float: right;
+    color: #3c6478;
+}
+
+span.accordeon-header-component-count{
+    margin-right: 15px;
+    font-size: 19px;
 }
 
 

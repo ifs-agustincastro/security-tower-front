@@ -2,6 +2,8 @@ import React from 'react';
 import { Navbar } from 'react-bootstrap';
 import '../styles/Header.css';
 import Dashboard from './dashboard/Dashboard';
+import TableHome from './dataTable/TableHome';
+import { Route, Switch } from 'react-router';
 
 function App() {
   return (
@@ -14,7 +16,13 @@ function App() {
           </Navbar.Text>
         </Navbar.Collapse>
       </Navbar>
-      <Dashboard/>
+
+      <Switch>
+        <Route exact path="/" component={Dashboard} />
+        <Route exact path="/incidents" component={TableHome} />
+
+      </Switch>
+
     </div>
   );
 }
