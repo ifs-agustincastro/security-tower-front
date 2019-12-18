@@ -1,0 +1,65 @@
+
+.jumbotron-summary{
+    margin: 2.5em;
+    background-color: #e9ecef73 !important;
+    border-radius: 25px !important;
+
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.jumbotron-summary .badge{
+    font-size: 1.1em;
+    margin-left: 0.45em;
+}
+
+.text-summary{
+    font-size: 1.5em;
+    font-weight: 400;
+    font-family: 'Oxygen';
+}
+
+.summary-proj-name{
+    color: dimgray;
+}
+
+ul#summary-incident-list{
+    list-style-type: none;
+    padding-left: 1em;
+}
+
+ul#summary-incident-list li {
+    margin:0 0 10px 0;   
+ }
+
+@media (min-width: 576px){
+    .jumbotron {
+        padding: 2rem 2rem !important;
+    }
+}
+
+img.dashboard-cloud-logo{
+    width: 5em;
+    margin-top: 1.5em;
+}
+
+#component-card-container{
+    margin-top: 2em;
+}
+
+
+
+/* Accordeon styles */
+
+.accordeon-card-header{
+    font-family: "oxygen";
+}
+
+div.accordeon-card-header button{
+    text-decoration: none !important;
+    color: #3c6478;
+}
+
+
+/* ------------------ */

@@ -1,0 +1,91 @@
+
+.component-card{
+    width: 14rem;
+    background-color: #e9ecef73 !important;
+    border: 0 !important;
+    border-radius: 10px !important;
+    box-shadow: rgba(90, 97, 105, 0.11) 0px 2px 0px, rgba(90, 97, 105, 0.12) 0px 4px 8px, rgba(90, 97, 105, 0.06) 0px 10px 10px, rgba(90, 97, 105, 0.1) 0px 7px 70px;
+    margin-bottom: 10px;
+    border-top: 4px solid green !important;
+}
+
+img.card-product-logo{
+    border-radius: 50%;
+    background-color: lightgray;
+    float: right;
+    height: 62px;
+}
+
+div.text-muted{
+    color: #6c757dbf;
+}
+
+div.component-card div.card-title{
+    font-family: "oxygen";
+}
+
+div.component-card div.card-subtitle{
+    font-size: 12px;
+    font-weight: 700;
+}
+
+hr.card-content-separator{
+    margin: 5px 0;
+}
+
+ul.vulnerability-list{
+    list-style-type: none;
+    padding-left: 0em;
+    color: #6c757dbf;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+ul.vulnerability-list li{
+    font-size: 13px;
+    font-weight: 700;
+}
+
+ul.vulnerability-list li span.badge{
+    margin-left: 8px;
+}
+
+ul.vulnerability-list span.badge{
+    float: right;
+    margin-right: 1em;
+    background-color: #3c6478;
+    font-weight: 900;
+}
+
+div.checks-passed-container{
+    background-color: #3c6478;
+    border-radius: 1.5em;
+    padding: 3px;
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5px;
+    box-shadow: rgba(90, 97, 105, 0.11) 0px 2px 0px, rgba(90, 97, 105, 0.12) 0px 4px 8px, rgba(90, 97, 105, 0.06) 0px 10px 10px, rgba(90, 97, 105, 0.1) 0px 7px 70px;
+}
+
+div.checks-passed-container p{
+    margin-bottom: 0;
+    font-size: 11px;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+}
+
+div.checks-passed-container span{
+    font-weight: 900;
+    font-size: 14px;
+}
+
+.dot {
+    height: 20px;
+    width: 20px;
+    background-color: #8ce600;
+    box-shadow: 0px 0px 15px 0px rgba(140,230,0,1);
+    border-radius: 50%;
+    float: right;
+  }
