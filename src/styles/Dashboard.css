@@ -1,6 +1,7 @@
 
 .jumbotron-summary{
-    margin: 2.5em;
+    margin: 0.5em;
+    margin-bottom: 0.5em !important;
     background-color: #e9ecef73 !important;
     border-radius: 25px !important;
 
@@ -10,11 +11,12 @@
 }
 
 .jumbotron-summary .badge{
-    font-size: 1.1em;
+    font-size: 0.9em;
     margin-left: 0.45em;
 }
 
 .text-summary{
+    margin-top: 1em;
     font-size: 1.5em;
     font-weight: 400;
     font-family: 'Oxygen';
@@ -30,7 +32,22 @@ ul#summary-incident-list{
 }
 
 ul#summary-incident-list li {
-    margin:0 0 10px 0;   
+    margin:0 0 5px 0;   
+ }
+
+ #summary-left-half{
+     border-right: solid 1px #69696969;
+ }
+
+ ul#summary-incident-list span.badge{
+     float: right;
+ }
+
+ .summary-subtitle{
+    text-align: center;
+    font-family: "Oxygen";
+    font-size: 17px;
+    color: #3c6478;
  }
 
 @media (min-width: 576px){
@@ -39,8 +56,15 @@ ul#summary-incident-list li {
     }
 }
 
+/* Styles for small devices, mobile */
+@media (max-width: 576px) {
+    #summary-left-half{
+        border-right: none;
+    }
+}
+
 img.dashboard-cloud-logo{
-    width: 5em;
+    width: 3.5em;
     margin-top: 1.5em;
 }
 

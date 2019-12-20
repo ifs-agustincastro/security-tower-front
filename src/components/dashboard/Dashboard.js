@@ -9,7 +9,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEye } from '@fortawesome/free-solid-svg-icons'
 
 import ec2Logo from "../../images/ec2-logo.png";
-import s3Logo from "../../images/s3-logo.png";
 import lambdaLogo from "../../images/lambda-logo.png";
 import dynamoLogo from "../../images/dynamo-logo.png";
 import rdsLogo from "../../images/rds-logo.png";
@@ -48,19 +47,37 @@ function Dashboard() {
     return (
 
         <div >
+            <Container>
+                <Row>
+                    <Col>
+                        <p className="text-summary">Hello Agustin, Your summary for project <span className="summary-proj-name">Data Platform</span>:</p>
+                    </Col>
+                </Row>
+            </Container>
             <Jumbotron className="jumbotron-summary float-md-center">
                 <div>
-                    <div>
-                        <p className="text-summary">Hello Agustin, Your summary for project <span className="summary-proj-name">Data Platform</span>:</p>
-                        <ul id="summary-incident-list">
-                            <li>Critical vulnerabilities <Badge variant="danger">2</Badge></li>
-                            <li>High priority vulnerabilities <Badge variant="warning">12</Badge></li>
-                            <li>Medium priority vulnerabilities <Badge variant="info">4</Badge></li>
-                        </ul>
-                    </div>
+                    <Container id="dashboard-summary">
+                        <Row>
+                            <Col id="summary-left-half" sm="6">
+                                <p className="summary-subtitle">Vulnerabilities</p>
+                                <ul id="summary-incident-list">
+                                    <li>Critical <Badge variant="danger">2</Badge></li>
+                                    <li>High priority <Badge variant="warning">12</Badge></li>
+                                    <li>Medium priority <Badge variant="info">4</Badge></li>
+                                </ul>
+                            </Col>
+                            <Col sm="6">
+                                <p className="summary-subtitle">New Issues</p>
+                                <ul id="summary-incident-list">
+                                    <li>One day <Badge variant="secondary">1</Badge></li>
+                                    <li>Last week <Badge variant="secondary">3</Badge></li>
+                                    <li>Last month <Badge variant="secondary">12</Badge></li>
+                                </ul>
+                            </Col>
+                        </Row>
+                    </Container>
                 </div>
             </Jumbotron>
-
 
             <Container>
                 <Row>
@@ -78,7 +95,7 @@ function Dashboard() {
 
                     <Col>
                         <Accordion defaultActiveKey="0">
-                            <Card bsClass="grow">
+                            <Card>
                                 <Card.Header className="accordeon-card-header">
                                     <Accordion.Toggle as={Button} variant="link" eventKey="0">
                                         Database
