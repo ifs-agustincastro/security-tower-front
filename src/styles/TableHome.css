@@ -4,3 +4,8 @@ span.table-home-title{
     font-family: "Oxygen";
     font-size: 1.8em;
 }
+
+.no-compliant-row{
+    background-color: #fa8072ba !important;
+    font-weight: 700;
+}

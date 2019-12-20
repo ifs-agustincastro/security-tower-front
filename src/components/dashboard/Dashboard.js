@@ -78,7 +78,7 @@ function Dashboard() {
 
                     <Col>
                         <Accordion defaultActiveKey="0">
-                            <Card>
+                            <Card bsClass="grow">
                                 <Card.Header className="accordeon-card-header">
                                     <Accordion.Toggle as={Button} variant="link" eventKey="0">
                                         Database

@@ -683,6 +683,54 @@
     "proofOfCompliance": "arn:aws:rds:eu-central-1:235313193472:db:mns-int-monolith-005"
 },
 {
+    "ruleId": "DBS-IFS-014",
+    "ruleName": "rds-instance-public-access-check",
+    "severity": "Critical",
+    "accountId": "2,35313E+11",
+    "accountFullName": "Manaus Integration",
+    "accountShortName": "mns",
+    "environment": "int",
+    "region": "eu-central-1",
+    "evaluateComplianceCi": "NOT_COMPLIANT",
+    "proofOfCompliance": "arn:aws:rds:eu-central-1:235313193472:db:mns-int-monolith-005"
+},
+{
+    "ruleId": "DBS-IFS-013",
+    "ruleName": "rds-instance-everything-is-broken",
+    "severity": "Critical",
+    "accountId": "2,35313E+11",
+    "accountFullName": "Manaus Integration",
+    "accountShortName": "mns",
+    "environment": "int",
+    "region": "eu-central-1",
+    "evaluateComplianceCi": "NOT_COMPLIANT",
+    "proofOfCompliance": "arn:aws:rds:eu-central-1:235313193472:db:mns-int-monolith-005"
+},
+{
+    "ruleId": "DBS-IFS-015",
+    "ruleName": "rds-instance-public-access-check",
+    "severity": "Critical",
+    "accountId": "2,35313E+11",
+    "accountFullName": "Manaus Integration",
+    "accountShortName": "mns",
+    "environment": "int",
+    "region": "eu-central-1",
+    "evaluateComplianceCi": "NOT_COMPLIANT",
+    "proofOfCompliance": "arn:aws:rds:eu-central-1:235313193472:db:mns-int-monolith-005"
+},
+{
+    "ruleId": "DBS-IFS-015",
+    "ruleName": "rds-instance-alien-invasion",
+    "severity": "Critical",
+    "accountId": "2,35313E+11",
+    "accountFullName": "Manaus Integration",
+    "accountShortName": "mns",
+    "environment": "int",
+    "region": "eu-central-2",
+    "evaluateComplianceCi": "NOT_COMPLIANT",
+    "proofOfCompliance": "arn:aws:rds:eu-central-1:235313193472:db:mns-int-monolith-005"
+},
+{
     "ruleId": "DBS-IFS-015",
     "ruleName": "rds-instance-public-access-check",
     "severity": "Critical",
