@@ -2,3 +2,7 @@
 .header a, .header span{
     color: white !important;
 }
+
+.navbar-nav:nth-child(2) .dropdown {
+    margin-right: 10px;
+}

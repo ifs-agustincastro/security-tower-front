@@ -49,8 +49,11 @@ function Dashboard() {
         <div >
             <Container>
                 <Row>
-                    <Col>
-                        <p className="text-summary">Hello Agustin, Your summary for project <span className="summary-proj-name">Data Platform</span>:</p>
+                    <Col sm="10">
+                        <p className="text-summary">Hello Agustin, Your score for project <span className="summary-proj-name">Data Platform</span>:</p>
+                    </Col>
+                    <Col sm="2" className="text-center">
+                        <p className="score-badge">C</p>
                     </Col>
                 </Row>
             </Container>
@@ -67,7 +70,7 @@ function Dashboard() {
                                 </ul>
                             </Col>
                             <Col sm="6">
-                                <p className="summary-subtitle">New Issues</p>
+                                <p className="summary-subtitle">New Vulnerabilities</p>
                                 <ul id="summary-incident-list">
                                     <li>One day <Badge variant="secondary">1</Badge></li>
                                     <li>Last week <Badge variant="secondary">3</Badge></li>
